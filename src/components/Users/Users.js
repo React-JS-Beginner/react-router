@@ -9,7 +9,7 @@ const Users = () => {
       // fetch("https://randomuser.me/api/?results=15")
       .then((res) => res.json())
       .then((data) => setUsers(data));
-    //   .then((data) => setUsers(data.results))
+    //.then((data) => setUsers(data.results))
   }, []);
 
   return (
