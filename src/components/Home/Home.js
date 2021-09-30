@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Container } from "react-bootstrap";
 
 const Home = () => {
-    return (
-        <div className="text-center p-5">
-            <h1>Home</h1>
-        </div>
-    );
+  
+  return (
+    <Container>
+      <h1 className="text-center pb-3">Home</h1>
+    </Container>
+  );
 };
 
 export default Home;
