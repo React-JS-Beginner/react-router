@@ -1,8 +1,13 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 
 const User = (props) => {
-  const { name, email, company } = props.user;
+  const { id, name, email, company } = props.user;
+  const url = `/singleUser${id}`
+  const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
   return (
     <Col
       className="d-flex align-items-stretch"
@@ -22,6 +27,7 @@ const User = (props) => {
         <p>
           <strong>Email : </strong>{email}
         </p>
+        <Link to={url} className="text-danger">Call {phoneIcon}</Link>
       </Card>
     </Col>
   );
