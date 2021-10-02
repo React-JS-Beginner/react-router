@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import User from "../User/User";
 import { Container, Row } from "react-bootstrap";
+import UserPost from "../UserPost/UserPost";
 const Users = () => {
   const [users, setUsers] = useState([]);
 
@@ -13,7 +14,8 @@ const Users = () => {
   }, []);
 
   return (
-    <Container className="mb-5 pb-5">
+    <Container variant="mb-5 pb-5">
+      <UserPost></UserPost>
       <h1 className="text-center pb-4">Users</h1>
       <Row className="g-4">
         {users.map((user) => (

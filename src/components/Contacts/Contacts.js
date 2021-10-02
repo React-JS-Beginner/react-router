@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import Call from "../Call/Call";
 import Contact from "../Contact/Contact";
 
 const Contacts = () => {
@@ -15,6 +16,8 @@ const Contacts = () => {
     <Container className="mb-5 pb-5">
       
       <h1 className="text-center pb-4">Contact</h1>
+      <Call></Call>
+
       <Row className="g-4">
         {contacts.map((contact) => (
           <Contact key={contact.id} contact={contact}></Contact>

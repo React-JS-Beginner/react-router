@@ -15,6 +15,9 @@ const Posts = () => {
 
   return (
     <Container className="mb-5 pb-5">
+
+      
+
       <h1 className="text-center pb-4">Posts</h1>
       <Row className="g-4">
         {posts.map((post) => (

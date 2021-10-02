@@ -6,6 +6,8 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import Posts from "./components/Posts/Posts";
+import User from "./components/User/User";
+import UserPost from "./components/UserPost/UserPost";
 import Users from "./components/Users/Users";
 
 function App() {
@@ -34,7 +36,11 @@ function App() {
             <Contacts></Contacts>
           </Route>
 
-          <Route path="/call/:id">
+          <Route path="/users/userpost/:postid">
+            <UserPost></UserPost>
+          </Route>
+
+          <Route path="/contacts/call/:id">
             <Call></Call>
           </Route>
 
