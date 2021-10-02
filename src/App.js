@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Call from "./components/Call/Call";
 import Contacts from "./components/Contacts/Contacts";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -13,7 +14,6 @@ function App() {
       <Router>
         <Header></Header>
         <Switch>
-
           <Route exact path="/">
             <Home></Home>
           </Route>
@@ -34,10 +34,13 @@ function App() {
             <Contacts></Contacts>
           </Route>
 
+          <Route path="/call/:id">
+            <Call></Call>
+          </Route>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
-
         </Switch>
       </Router>
     </div>

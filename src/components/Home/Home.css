@@ -5,7 +5,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .app-logo {
-    animation: app-logo-spin infinite 20s linear;
+    animation: app-logo-spin infinite 2s linear;
   }
 }
 
