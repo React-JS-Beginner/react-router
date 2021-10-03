@@ -16,7 +16,7 @@ const Post = (props) => {
       <Card className="p-4 shadow">
         <h3 className="text-danger">{title.slice(0, 22)}</h3>
         <p>{body.slice(0, 110)}</p>
-        <Link to='/users/userpost/:postid' className="text-danger">Uploaded by...</Link>
+        <Link to='/users/userpost/id' className="text-danger">Posted by...</Link>
       </Card>
     </Col>
   );

@@ -36,11 +36,11 @@ function App() {
             <Contacts></Contacts>
           </Route>
 
-          <Route path="/users/userpost/:postid">
+          <Route path="/users/userpost/id">
             <UserPost></UserPost>
           </Route>
 
-          <Route path="/contacts/call/:id">
+          <Route path="/call">
             <Call></Call>
           </Route>
 

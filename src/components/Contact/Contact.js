@@ -14,7 +14,7 @@ const Contact = (props) => {
       sm={12}
       xs={12}
     >
-      <Card className="p-4 shadow w-100 fs-5">
+      <Card className="p-4 shadow-sm w-100 fs-5">
         <p>
           <strong className="text-danger">{name}</strong>
         </p>

@@ -17,7 +17,7 @@ const User = (props) => {
       sm={12}
       xs={12}
     >
-      <Card className="p-4 shadow w-100">
+      <Card className="p-4 shadow-sm w-100">
         <p>
           <strong>Name : </strong>{" "}
           <strong className="text-danger">{name}</strong>
@@ -32,7 +32,7 @@ const User = (props) => {
         </p>
         
 
-        <Link to="/contacts/call/:id"><Button variant="outline-danger w-50">{phoneIcon} Call</Button></Link>
+        <Link to="/call"><Button variant="outline-danger w-50">{phoneIcon} Call</Button></Link>
 
       </Card>
     </Col>

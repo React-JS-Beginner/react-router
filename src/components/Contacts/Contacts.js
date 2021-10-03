@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import Call from "../Call/Call";
 import Contact from "../Contact/Contact";
+import UserHook from "../hooks/UserHook";
 
 const Contacts = () => {
-  const [contacts, setContacts] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((data) => setContacts(data));
-  }, []);
+  
+  const [users] = UserHook();
 
   return (
     <Container className="mb-5 pb-5">
@@ -18,7 +13,7 @@ const Contacts = () => {
       <h1 className="text-center pb-4">Contact</h1>
       
       <Row className="g-4">
-        {contacts.map((contact) => (
+        {users.map((contact) => (
           <Contact key={contact.id} contact={contact}></Contact>
         ))}
       </Row>
