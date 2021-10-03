@@ -9,7 +9,7 @@ const Contacts = () => {
   return (
     <Container className="mb-5 pb-5">
       
-      <h1 className="text-center pb-4">Contact</h1>
+      <h1 className="text-center pb-4">Contacts</h1>
       
       <Row className="g-4">
         {users.map((contact) => (

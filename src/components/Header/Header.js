@@ -27,7 +27,7 @@ const Header = () => {
 
         <div className="col">
           <NavLink className="nav" activeClassName="nav-active" to="/contacts">
-            <Button variant="outline-danger w-100">Contact</Button>
+            <Button variant="outline-danger w-100">Contacts</Button>
           </NavLink>
         </div>
       </div>
