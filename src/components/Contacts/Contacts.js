@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Contact from "../Contact/Contact";
 import UserHook from "../hooks/UserHook";

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Post = (props) => {
   const { title, body } = props.post;
+  
   return (
     <Col
       className="d-flex align-items-stretch"
@@ -16,7 +17,7 @@ const Post = (props) => {
       <Card className="p-4 shadow">
         <h3 className="text-danger">{title.slice(0, 22)}</h3>
         <p>{body.slice(0, 110)}</p>
-        <Link to='/users/userpost/id' className="text-danger">Posted by...</Link>
+        <Link to='/userpost/userID' className="text-danger">Posted by...</Link>
       </Card>
     </Col>
   );

@@ -2,10 +2,17 @@ import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const User = (props) => {
-  const { name, email, company } = props.user;
+  const { id, name, email, company } = props.user;
+  const history = useHistory();
+
+  const url = `/call/${id}`;
+
+    const handleCallClick = () => {
+        history.push(url);
+    }
 
   const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />;
   return (
@@ -32,7 +39,7 @@ const User = (props) => {
         </p>
         
 
-        <Link to="/call"><Button variant="outline-danger w-50">{phoneIcon} Call</Button></Link>
+        <Button onClick={handleCallClick} variant="outline-danger w-50">{phoneIcon} Call</Button>
 
       </Card>
     </Col>

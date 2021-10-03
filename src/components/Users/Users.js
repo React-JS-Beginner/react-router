@@ -5,7 +5,7 @@ import UserHook from "../hooks/UserHook";
 
 const Users = () => {
 
-  const [users] = UserHook()  
+  const [users] = UserHook();
 
   return (
     <Container fluid className="mb-5 pb-5">
