@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const User = (props) => {
   const { name, email, company } = props.user;
@@ -29,9 +30,10 @@ const User = (props) => {
           <strong>Email : </strong>
           {email}
         </p>
-
-        <Button variant="outline-danger w-50">{phoneIcon} Call</Button>
         
+
+        <Link to="/contacts/call/:id"><Button variant="outline-danger w-50">{phoneIcon} Call</Button></Link>
+
       </Card>
     </Col>
   );

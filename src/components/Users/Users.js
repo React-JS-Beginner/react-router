@@ -14,8 +14,8 @@ const Users = () => {
   }, []);
 
   return (
-    <Container variant="mb-5 pb-5">
-      <UserPost></UserPost>
+    <Container className="mb-5 pb-5">
+      
       <h1 className="text-center pb-4">Users</h1>
       <Row className="g-4">
         {users.map((user) => (

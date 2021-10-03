@@ -16,8 +16,7 @@ const Contacts = () => {
     <Container className="mb-5 pb-5">
       
       <h1 className="text-center pb-4">Contact</h1>
-      <Call></Call>
-
+      
       <Row className="g-4">
         {contacts.map((contact) => (
           <Contact key={contact.id} contact={contact}></Contact>
